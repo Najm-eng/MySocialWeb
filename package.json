@@ -3,13 +3,17 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
+    "build": "cd server && npm install  && cd ../client && npm install && npm run build",
     "start": "node server/index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "name": "mysocialweb",
+  "description": "install express body-parser bcrypt cors dotenv gridfs-stream multer multer-gridfs-storage helmet morgan jsonwebtoken mongoose\r 2 using Yup for schema builder for value parsing and validagion# MySocialWeb1",
+  "version": "1.0.0",
+  "main": "index.js"
 }
